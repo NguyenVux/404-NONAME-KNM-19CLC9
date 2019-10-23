@@ -3,17 +3,43 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Noto Sans', sans-serif;
 }
 
 body
 {
-    
+    background-color: black;
 }
 #background
 {
-    //width: 100%;
+    width: 50%;
     display: block;
-    margin: 0 auto;
+    margin: 50px auto;
     max-height: 100%;
     //transform: translate(0,-20%);
+}
+
+
+
+$Font_color: white;
+.Info
+{
+    &__List
+    {
+        color: $Font_color;
+        display: flex;
+        width: 100%;
+        justify-content: space-evenly;
+        height: 80px;
+        &__Element
+        {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+            width: 30%;
+            border-left: 1px solid white;            
+            border-right: 1px solid white;            
+        }
+    }
 }
