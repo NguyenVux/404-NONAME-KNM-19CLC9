@@ -30,8 +30,8 @@ $Font_color: white;
       flex-direction: column;
       text-align: center;
       width: 30%;
-      border-left: 1px solid white;
-      border-right: 1px solid white;
+      border-left: 1px solid $Font_color;
+      border-right: 1px solid $Font_color;
       min-height: 80px;
       &--item {
         color: white;
