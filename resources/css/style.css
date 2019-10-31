@@ -103,6 +103,25 @@ body {
 }
 
 .Info__List__Element--item:hover div {
-  top: -100%;
+  -webkit-animation: moveup;
+          animation: moveup;
+}
+
+@-webkit-keyframes moveup {
+  0% {
+    top: 0;
+  }
+  100% {
+    top: -100%;
+  }
+}
+
+@keyframes moveup {
+  0% {
+    top: 0;
+  }
+  100% {
+    top: -100%;
+  }
 }
 /*# sourceMappingURL=style.css.map */
