@@ -13,7 +13,7 @@ body {
 
 .container {
   background-color: white;
-  width: 65%;
+  width: 70%;
   position: fixed;
   top: 50%;
   left: 50%;
@@ -28,11 +28,14 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(218, 218, 218, 0.2);
+          box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(218, 218, 218, 0.2);
+  border: 2px solid black;
 }
 
 .container__user__left {
   background-color: #ffa600;
-  width: 30%;
+  width: 32%;
   height: 100%;
   padding: 20px 0;
 }
@@ -48,14 +51,14 @@ body {
 
 .container__user__left--slogan {
   display: block;
-  width: 75%;
+  width: 80%;
   margin: 0 auto;
   margin-bottom: 50px;
   font-size: 1em;
 }
 
 .container__user__right {
-  width: 70%;
+  width: 68%;
   height: 100%;
 }
 
@@ -77,6 +80,16 @@ body {
 
 .container__user__right--role--text {
   font-size: 3em;
+  font-weight: 900;
+}
+
+.container__user__right--info {
+  padding-left: 60px;
+  padding-top: 40px;
+}
+
+.container__user__right--info--text {
+  font-size: 2em;
   font-weight: 900;
 }
 /*# sourceMappingURL=Profile_style.css.map */
