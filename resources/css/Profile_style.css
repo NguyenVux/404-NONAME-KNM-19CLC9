@@ -92,4 +92,17 @@ body {
   font-size: 2em;
   font-weight: 900;
 }
+
+ul {
+  position: fixed;
+  top: 50%;
+  left: 20px;
+  color: white;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+}
+
+ul li {
+  cursor: pointer;
+}
 /*# sourceMappingURL=Profile_style.css.map */

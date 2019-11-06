@@ -84,3 +84,16 @@ body
         }
     }
 }
+
+ul
+{
+    position: fixed;
+    top: 50%;
+    left: 20px;
+    color: white;
+    transform: translate(0,-50%);
+    li
+    {
+        cursor: pointer;
+    }
+}
