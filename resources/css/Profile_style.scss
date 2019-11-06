@@ -1,0 +1,74 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Noto Sans", sans-serif;
+    text-decoration: none;
+}
+
+body
+{
+    background-color: black;
+}
+
+.container
+{
+    background-color: white;
+    width: 65%;
+    position: fixed;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    height: 600px;
+    &__user
+    {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        &__left
+        {
+            background-color: rgb(255, 166, 0);
+            &--avatar
+            {
+                display: block;
+                width: 60%;
+                margin: 0 auto;
+                border-radius: 50%;
+                border: 3px solid white;
+                margin-bottom: 50px;
+            }
+            &--slogan
+            {
+                display: block;
+                width: 75%;
+                margin: 0 auto;
+                margin-bottom: 50px;
+                font-size: 1em;
+            }
+            width: 30%;
+            height: 100%;
+            padding: 20px 0;
+        }
+        &__right
+        {
+            width: 70%;
+            height: 100%;
+            &--role
+            {
+                height: 20%;
+                background: rgb(138, 138, 138);
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                justify-content: center;
+                &--text
+                {
+                    font-size: 3em;
+                    font-weight: 900;
+                }
+            }
+
+        }
+    }
+}
