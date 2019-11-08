@@ -40,11 +40,15 @@ body {
 }
 
 .container__user__img {
-  width: 45%;
+  width: 40%;
+  -webkit-box-shadow: 0 0 15px grey;
+          box-shadow: 0 0 15px grey;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .container__user__text {
-  width: 30%;
+  width: 35%;
   height: 70%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -55,6 +59,9 @@ body {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
+  width: 30%;
+  background-color: grey;
+  padding: 2px;
 }
 
 .container__user__text--info {
