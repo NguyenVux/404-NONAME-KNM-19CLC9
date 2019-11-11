@@ -18,7 +18,7 @@ body {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  height: 450px;
+  min-height: 450px;
 }
 
 .container__user {
@@ -53,15 +53,22 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .container__user__text--role {
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-  width: 30%;
-  background-color: grey;
-  padding: 2px;
+  height: 10%;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  background-color: #adadad;
+  padding: 0 15px;
+  font-weight: 900;
+  -webkit-box-shadow: 0 0 5px black;
+          box-shadow: 0 0 5px black;
 }
 
 .container__user__text--info {
@@ -69,5 +76,8 @@ body {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 /*# sourceMappingURL=Profile_style.css.map */
