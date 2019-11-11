@@ -46,21 +46,48 @@ $offeset: 25%;
             height: 70%;
             display: flex;
             flex-direction: column;
+            justify-content: space-evenly;
             &--role
             {
-                height: 10%;
+                //height: 10%;
                 width: fit-content;
                 background-color: rgb(173, 173, 173);
                 padding: 0 15px;
                 font-weight: 900;
                 box-shadow: 0 0 5px black;
+                font-size: 1.5em;
             }
             &--info
             {
                 border-bottom: 2px solid orange;                
                 height: fit-content;
                 width: fit-content;
+                font-size: 1.2em;
+                font-weight: bold;
+                &:nth-last-child(2)
+                {
+                    font-size: 0.9em;
+                    font-weight: normal;
+                }
             }
+            &--contact
+            {
+                list-style-type: none;
+                display: flex;
+                flex-wrap: ceil;
+                justify-content: space-evenly;
+                flex-wrap: wrap;
+                width: 100%;
+                li:first-child
+                {
+                    &::after
+                    {
+                        flex-basis: 100%;
+                    }
+                    width: 100%;
+                }
+            }
+            
         }
     }
 }

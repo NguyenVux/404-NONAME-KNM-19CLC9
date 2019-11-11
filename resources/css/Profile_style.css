@@ -57,10 +57,12 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 .container__user__text--role {
-  height: 10%;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -69,6 +71,7 @@ body {
   font-weight: 900;
   -webkit-box-shadow: 0 0 5px black;
           box-shadow: 0 0 5px black;
+  font-size: 1.5em;
 }
 
 .container__user__text--info {
@@ -79,5 +82,36 @@ body {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.container__user__text--info:nth-last-child(2) {
+  font-size: 0.9em;
+  font-weight: normal;
+}
+
+.container__user__text--contact {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: ceil;
+      flex-wrap: ceil;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+}
+
+.container__user__text--contact li:first-child {
+  width: 100%;
+}
+
+.container__user__text--contact li:first-child::after {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
 }
 /*# sourceMappingURL=Profile_style.css.map */

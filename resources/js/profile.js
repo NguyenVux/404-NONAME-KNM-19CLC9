@@ -21,7 +21,7 @@ function Set_Container_height()
         let image = element.children[0];
         let text = $(element.children[1]);
         let height = image.clientHeight;
-        text.css("height",`${height*0.7}px`);
+        text.css("height",`${height*0.9}px`);
         if(height >= max)
         {
             max = height;
