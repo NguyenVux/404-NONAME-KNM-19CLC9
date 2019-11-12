@@ -84,12 +84,12 @@ body {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  font-size: 1.2em;
+  font-size: 1.5em;
   font-weight: bold;
 }
 
 .container__user__text--info:nth-last-child(2) {
-  font-size: 0.9em;
+  font-size: 1em;
   font-weight: normal;
 }
 
@@ -192,7 +192,7 @@ body {
   color: rgba(5, 5, 5, 0.637);
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1300px) {
   .container__user__text {
     font-size: 9px;
   }
@@ -207,6 +207,28 @@ body {
   }
   .container__user__text--contact {
     font-size: 9px;
+  }
+}
+
+@-webkit-keyframes Scale_down {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+}
+
+@keyframes Scale_down {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
   }
 }
 /*# sourceMappingURL=Profile_style.css.map */

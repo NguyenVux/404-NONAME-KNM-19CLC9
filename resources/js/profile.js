@@ -97,7 +97,9 @@ function Update_POS(index)
         let offset = (i > index) ? width_con-width : (width_con-width)/2;
         let current_pos =parseFloat($(Card[index]).css("left"));
         console.log(parseFloat(element.css("left"))- current_pos);
-        element.animate({left:`${parseFloat(element.css("left"))- current_pos+offset}px`});
+        element.animate({scale: "0.9"},200);
+        element.animate({left:`${parseFloat(element.css("left"))- current_pos+offset}px`},1000);
+        element.animate({scale: "1"},200);
         if(i === index)
         {
             element.css("box-shadow","0 4px 12px 0px rgba(0,0,0,.25)");

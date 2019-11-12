@@ -39,9 +39,10 @@ $fontSize: 13px;
         align-items: center;
         height: 100%;
         width: 95%; 
-        //transform: translate(0,-50%);
         left: 0;
         top: 0;
+        //animation: Scale_down 2s ease-in 0 infinite reverse;
+        //animation: Scale_down 2s ease-in-out 0s 1 reverse forwards;
         &__img
         {
             width: $imgWdith;
@@ -71,11 +72,11 @@ $fontSize: 13px;
                 border-bottom: 2px solid orange;                
                 height: fit-content;
                 width: fit-content;
-                font-size: 1.2em;
+                font-size: 1.5em;
                 font-weight: bold;
                 &:nth-last-child(2)
                 {
-                    font-size: 0.9em;
+                    font-size: 1em;
                     font-weight: normal;
                 }
             }
@@ -173,7 +174,7 @@ $fontSize: 13px;
     }
 }
 
-@media screen and (max-width: 1200px)
+@media screen and (max-width: 1300px)
 {
     .container
     {
@@ -206,5 +207,17 @@ $fontSize: 13px;
                 }
             }
         }
+    }
+}
+
+@keyframes Scale_down
+{
+    0%
+    {
+        transform: scale(1);
+    }
+    100%
+    {
+        transform: scale(0.8);
     }
 }
