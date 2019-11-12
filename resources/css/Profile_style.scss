@@ -16,6 +16,9 @@ $RoleBoxWidth: 30%;
 $DefaultWidth: 100%;
 $imgWdith: 40%;
 $offeset: 25%;
+$Hoveroffset: -15%;
+$Clickoffset: -5%;
+$fontSize: 13px;
 .container
 {
    
@@ -24,16 +27,21 @@ $offeset: 25%;
     top: 50%;
     left:50%;
     transform: translate(-50%,-50%);
-    min-height: 450px;
+    //min-height: 450px;
+    //overflow: hidden;
     &__user
     {
+        position: absolute;
         background-image: linear-gradient(90deg,rgb(255, 153, 0) 30%,white 10%);
-        box-shadow: 0 0 30px rgb(65, 65, 65);
+        box-shadow: 0 4px 12px 0px rgba(0,0,0,.25);
         display: flex;
         justify-content: space-evenly;
         align-items: center;
         height: 100%;
-        width: 100%;
+        width: 95%; 
+        transform: translate(-50%,-50%);
+        left: 50%;
+        top: 50%;
         &__img
         {
             width: $imgWdith;
@@ -47,6 +55,7 @@ $offeset: 25%;
             display: flex;
             flex-direction: column;
             justify-content: space-evenly;
+            font-size: $fontSize;
             &--role
             {
                 //height: 10%;
@@ -74,20 +83,89 @@ $offeset: 25%;
             {
                 list-style-type: none;
                 display: flex;
-                flex-wrap: ceil;
                 justify-content: space-evenly;
                 flex-wrap: wrap;
                 width: 100%;
-                li:first-child
+                font-size: 15px;
+                
+                &--header
                 {
+                    color: black;
                     &::after
                     {
                         flex-basis: 100%;
                     }
+                    font-weight: 900;
                     width: 100%;
+                    text-align: center;
+                }
+                &--item
+                {
+                    color: black;
+                    font-size: 1.5em;
+                    a
+                    {
+                        color: black;
+                        &:hover
+                        {
+                            i
+                            {
+                                //background-color: green;
+                                position: relative;
+                                top: $Hoveroffset;
+                                
+                            }
+                        }
+                        &:active
+                        {
+                            i
+                            {
+                                color: grey;
+                                position: relative;
+                                top: $Clickoffset;
+                            }
+                        }
+                    }
                 }
             }
             
+        }
+    }
+}
+
+
+@media screen and (max-width: 1200px)
+{
+    .container
+    {
+        &__user
+        {
+            &__text
+            {
+                font-size: 9px;
+                &--contact
+                {
+                    font-size: 10px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 850px)
+{
+    .container
+    {
+        &__user
+        {
+            &__text
+            {
+                font-size: 8px;
+                &--contact
+                {
+                    font-size: 9px;
+                }
+            }
         }
     }
 }

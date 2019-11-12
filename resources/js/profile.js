@@ -1,12 +1,19 @@
 $(document).ready(()=>
 {
     Set_Container_height();
+    setCardPosition();
 }) 
 
 $(window).resize(()=>
 {
     Set_Container_height();
 })
+
+function setCardPosition()
+{
+    let Card  = $(".container").children();
+    console.log(Card);
+}
 
 function Set_Container_height()
 {
@@ -21,13 +28,19 @@ function Set_Container_height()
         let image = element.children[0];
         let text = $(element.children[1]);
         let height = image.clientHeight;
-        text.css("height",`${height*0.9}px`);
+        console.log(height)
+        text.css("height",`${height*0.7}px`);
         if(height >= max)
         {
             max = height;
             console.log(max);
         }
     });
+    Array.from(User_card).forEach(element => {
+        $(element).css("height",`${max+50}px`);
+        //console.log($(element).css("height"));
+    });
     container.css("height",`${max+100}px`);
+    //console.log(container.css("height"));
 
 }
