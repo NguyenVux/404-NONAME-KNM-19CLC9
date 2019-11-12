@@ -8,6 +8,7 @@ $(window).resize(()=>
 {
     Set_Container_height();
     setCardPosition();
+    index = 0;
     //console.log(ElementNumber);
 })
 
