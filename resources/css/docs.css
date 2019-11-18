@@ -1,1 +1,43 @@
-/* No CSS *//*# sourceMappingURL=docs.css.map */
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: yellow;
+}
+
+section {
+  width: 50%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-color: white;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  min-height: 400px;
+  padding: 15px;
+}
+
+table {
+  width: 90%;
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+
+table tr:nth-child(even) {
+  background-color: #b9b7b7;
+}
+
+table tr:hover {
+  background-color: grey;
+}
+
+table tr td {
+  padding: 15px;
+}
+/*# sourceMappingURL=docs.css.map */

@@ -2,10 +2,10 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Noto Sans", sans-serif;
+  font-family: "Bebas Neue", sans-serif;
   text-decoration: none;
 }
-
+@import url('https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap');
 body {
   background-color: black;
 }
@@ -73,7 +73,9 @@ $icon_rotation: -2.4deg;
       color:red;
         background-color: white;
         list-style-type: none;
-        color:green;
+        color:rgb(0, 0, 0);
+        font-weight: 900;
+        font-size: 2em;
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
@@ -84,5 +86,4 @@ $icon_rotation: -2.4deg;
       }
     }
   }
-
 }

@@ -1,0 +1,47 @@
+*
+{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+body
+{
+    background-color: yellow;
+}
+
+section
+{
+    width: 50%;
+    position: fixed;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    background-color: white;
+    box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
+    min-height: 400px;
+    padding: 15px;
+}
+table
+{
+    width: 90%;
+    margin: 0 auto;
+    //border-bottom: 1px solid rgb(112, 111, 111);
+    border-collapse: collapse;
+    tr
+    {
+        &:nth-child(even)
+        {
+            background-color: #b9b7b7;
+        }
+        &:hover
+        {
+            background-color: grey;
+        }
+        td
+        {
+            padding: 15px;
+        }
+    }
+
+    
+}
